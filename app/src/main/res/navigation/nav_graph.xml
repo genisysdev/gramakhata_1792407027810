@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/nav_dashboard">
+
+    <!-- Due Dashboard (Home) -->
+    <fragment
+        android:id="@+id/nav_dashboard"
+        android:name="com.gramakhata.app.ui.dashboard.DueDashboardFragment"
+        android:label="@string/dashboard_title"
+        tools:layout="@layout/fragment_due_dashboard">
+        <action
+            android:id="@+id/action_dashboard_to_addCustomer"
+            app:destination="@id/nav_add_customer"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_dashboard_to_customerDetail"
+            app:destination="@id/nav_customer_detail"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+
+    <!-- Add Customer -->
+    <fragment
+        android:id="@+id/nav_add_customer"
+        android:name="com.gramakhata.app.ui.customer.AddCustomerFragment"
+        android:label="@string/customer_add_title"
+        tools:layout="@layout/fragment_add_customer">
+        <argument
+            android:name="customerId"
+            app:argType="long"
+            android:defaultValue="-1L" />
+    </fragment>
+
+    <!-- Customer Detail -->
+    <fragment
+        android:id="@+id/nav_customer_detail"
+        android:name="com.gramakhata.app.ui.customer.CustomerDetailFragment"
+        android:label="@string/customer_detail_title"
+        tools:layout="@layout/fragment_customer_detail">
+        <argument
+            android:name="customerId"
+            app:argType="long" />
+        <action
+            android:id="@+id/action_customerDetail_to_addTransaction"
+            app:destination="@id/nav_add_transaction"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_customerDetail_to_editCustomer"
+            app:destination="@id/nav_add_customer"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+
+    <!-- Add Transaction -->
+    <fragment
+        android:id="@+id/nav_add_transaction"
+        android:name="com.gramakhata.app.ui.transaction.AddTransactionFragment"
+        android:label="Transaction"
+        tools:layout="@layout/fragment_add_transaction">
+        <argument
+            android:name="customerId"
+            app:argType="long" />
+        <argument
+            android:name="isCredit"
+            app:argType="boolean" />
+    </fragment>
+
+    <!-- Daily Report -->
+    <fragment
+        android:id="@+id/nav_report"
+        android:name="com.gramakhata.app.ui.report.DailyReportFragment"
+        android:label="@string/report_title"
+        tools:layout="@layout/fragment_daily_report" />
+
+    <!-- Shop Profile / Settings -->
+    <fragment
+        android:id="@+id/nav_settings"
+        android:name="com.gramakhata.app.ui.settings.ShopProfileFragment"
+        android:label="@string/shop_profile_title"
+        tools:layout="@layout/fragment_shop_profile" />
+
+</navigation>

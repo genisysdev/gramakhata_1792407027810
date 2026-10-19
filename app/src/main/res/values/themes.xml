@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base Application Theme -->
+    <style name="Theme.GramaKhata" parent="Theme.Material3.Light.NoActionBar">
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/primary_dark</item>
+        <item name="colorOnPrimary">@color/on_primary</item>
+        <item name="colorSecondary">@color/secondary</item>
+        <item name="colorOnSecondary">@color/on_secondary</item>
+        <item name="android:colorBackground">@color/background</item>
+        <item name="colorSurface">@color/surface</item>
+        <item name="colorOnSurface">@color/on_surface</item>
+        <item name="android:statusBarColor">@color/status_bar</item>
+        <item name="android:navigationBarColor">@color/primary_dark</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+
+    <!-- Splash Theme -->
+    <style name="Theme.GramaKhata.Splash" parent="Theme.Material3.Light.NoActionBar">
+        <item name="android:windowBackground">@color/splash_background</item>
+        <item name="android:statusBarColor">@color/primary_dark</item>
+        <item name="android:navigationBarColor">@color/primary_dark</item>
+    </style>
+
+    <!-- Toolbar -->
+    <style name="Theme.GramaKhata.Toolbar" parent="Widget.Material3.Toolbar">
+        <item name="android:background">@color/primary</item>
+        <item name="titleTextColor">@color/text_on_dark</item>
+    </style>
+
+    <!-- Card Style -->
+    <style name="GramaKhata.Card" parent="Widget.Material3.CardView.Filled">
+        <item name="cardCornerRadius">@dimen/card_radius</item>
+        <item name="cardElevation">@dimen/card_elevation</item>
+        <item name="contentPadding">@dimen/card_padding</item>
+    </style>
+
+    <!-- Credit Button -->
+    <style name="GramaKhata.Button.Credit" parent="Widget.Material3.Button">
+        <item name="backgroundTint">@color/credit_red</item>
+        <item name="android:textColor">@color/text_on_dark</item>
+        <item name="android:minHeight">@dimen/button_height</item>
+        <item name="cornerRadius">@dimen/button_radius</item>
+        <item name="android:textSize">@dimen/text_body</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <!-- Payment Button -->
+    <style name="GramaKhata.Button.Payment" parent="Widget.Material3.Button">
+        <item name="backgroundTint">@color/payment_green</item>
+        <item name="android:textColor">@color/text_on_dark</item>
+        <item name="android:minHeight">@dimen/button_height</item>
+        <item name="cornerRadius">@dimen/button_radius</item>
+        <item name="android:textSize">@dimen/text_body</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <!-- WhatsApp Button -->
+    <style name="GramaKhata.Button.WhatsApp" parent="Widget.Material3.Button">
+        <item name="backgroundTint">@color/whatsapp_green</item>
+        <item name="android:textColor">@color/text_on_dark</item>
+        <item name="android:minHeight">@dimen/button_height</item>
+        <item name="cornerRadius">@dimen/button_radius</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <!-- SMS Button -->
+    <style name="GramaKhata.Button.SMS" parent="Widget.Material3.Button.OutlinedButton">
+        <item name="strokeColor">@color/sms_blue</item>
+        <item name="android:textColor">@color/sms_blue</item>
+        <item name="android:minHeight">@dimen/button_height</item>
+        <item name="cornerRadius">@dimen/button_radius</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <!-- Amount Text Large -->
+    <style name="GramaKhata.Text.Amount" parent="TextAppearance.Material3.HeadlineLarge">
+        <item name="android:textSize">@dimen/text_amount_large</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- PIN Pad Button -->
+    <style name="GramaKhata.PinButton" parent="Widget.Material3.Button.TextButton">
+        <item name="android:layout_width">80dp</item>
+        <item name="android:layout_height">80dp</item>
+        <item name="android:layout_margin">4dp</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">@color/text_on_dark</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="cornerRadius">40dp</item>
+        <item name="rippleColor">#40FFFFFF</item>
+    </style>
+
+    <!-- Dialog Theme -->
+    <style name="Theme.GramaKhata.Dialog" parent="ThemeOverlay.Material3.MaterialAlertDialog">
+        <item name="colorPrimary">@color/primary</item>
+    </style>
+
+</resources>

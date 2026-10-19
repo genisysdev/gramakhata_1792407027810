@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- App -->
+    <string name="app_name">கிராம கணக்கு</string>
+    <string name="app_tagline">உங்கள் கிராம டிஜிட்டல் பேரேடு</string>
+
+    <!-- Navigation -->
+    <string name="nav_dashboard">டாஷ்போர்ட்</string>
+    <string name="nav_customers">வாடிக்கையாளர்கள்</string>
+    <string name="nav_report">தினசரி அறிக்கை</string>
+    <string name="nav_settings">அமைப்புகள்</string>
+
+    <!-- Dashboard -->
+    <string name="dashboard_title">நிலுவை டாஷ்போர்ட்</string>
+    <string name="dashboard_total_due">மொத்த நிலுவை</string>
+    <string name="dashboard_no_customers">வாடிக்கையாளர்கள் இல்லை.\n+ அழுத்தி முதல் வாடிக்கையாளரைச் சேர்க்கவும்.</string>
+    <string name="dashboard_search_hint">வாடிக்கையாளரைத் தேடு…</string>
+
+    <!-- Customer -->
+    <string name="customer_add_title">வாடிக்கையாளரைச் சேர்</string>
+    <string name="customer_edit_title">வாடிக்கையாளரைத் திருத்து</string>
+    <string name="customer_name_hint">வாடிக்கையாளர் பெயர்</string>
+    <string name="customer_phone_hint">தொலைபேசி எண்</string>
+    <string name="customer_add_photo">புகைப்படம் சேர்</string>
+    <string name="customer_change_photo">புகைப்படத்தை மாற்று</string>
+    <string name="customer_save">வாடிக்கையாளரைச் சேமி</string>
+    <string name="customer_delete">வாடிக்கையாளரை நீக்கு</string>
+    <string name="customer_delete_confirm">இந்த வாடிக்கையாளரை நீக்க விரும்புகிறீர்களா? அவர்களின் அனைத்து பரிவர்த்தனைகளும் நீக்கப்படும்.</string>
+    <string name="customer_detail_title">வாடிக்கையாளர் விவரங்கள்</string>
+    <string name="customer_net_balance">நிகர இருப்பு</string>
+    <string name="customer_will_get">உங்களுக்கு கிடைக்கும்</string>
+    <string name="customer_will_give">நீங்கள் கொடுக்க வேண்டும்</string>
+
+    <!-- Transactions -->
+    <string name="txn_credit_title">கடன் கொடுத்தது</string>
+    <string name="txn_payment_title">பணம் பெற்றது</string>
+    <string name="txn_amount_hint">தொகையை உள்ளிடவும் (₹)</string>
+    <string name="txn_note_hint">பொருள் விவரம் (விருப்பம்)</string>
+    <string name="txn_save">சேமி</string>
+    <string name="txn_credit">+ கடன் கொடுத்தது</string>
+    <string name="txn_payment">- பணம் பெற்றது</string>
+    <string name="txn_history_title">பரிவர்த்தனை வரலாறு</string>
+    <string name="txn_no_history">பரிவர்த்தனைகள் இல்லை.</string>
+    <string name="txn_credit_label">கடன்</string>
+    <string name="txn_payment_label">பணம்</string>
+    <string name="txn_delete_title">பரிவர்த்தனையை நீக்கு</string>
+    <string name="txn_delete_confirm">இந்த பரிவர்த்தனையை நீக்க விரும்புகிறீர்களா?</string>
+    <string name="txn_edit">பரிவர்த்தனையைத் திருத்து</string>
+    <string name="txn_options_title">பரிவர்த்தனை விருப்பங்கள்</string>
+    <string name="txn_updated">பரிவர்த்தனை புதுப்பிக்கப்பட்டது!</string>
+    <string name="txn_deleted">பரிவர்த்தனை நீக்கப்பட்டது!</string>
+
+    <!-- Reminder -->
+    <string name="remind_title">நினைவூட்டல் அனுப்பு</string>
+    <string name="remind_whatsapp">WhatsApp மூலம் நினைவூட்டு</string>
+    <string name="remind_sms">SMS மூலம் நினைவூட்டு</string>
+    <string name="remind_message">வணக்கம், %1$s இல் உங்கள் நிலுவை ₹%2$s. தயவுசெய்து உங்களுக்கு வசதியான போது செலுத்துங்கள். நன்றி! — %3$s</string>
+    <string name="remind_no_phone">இந்த வாடிக்கையாளருக்கு தொலைபேசி எண் இல்லை.</string>
+    <string name="remind_whatsapp_not_installed">இந்த சாதனத்தில் WhatsApp நிறுவப்படவில்லை.</string>
+
+    <!-- Daily Report -->
+    <string name="report_title">தினசரி வசூல் அறிக்கை</string>
+    <string name="report_date">தேதி: %1$s</string>
+    <string name="report_total_credit">மொத்த கடன் கொடுத்தது</string>
+    <string name="report_total_payment">மொத்த பணம் பெற்றது</string>
+    <string name="report_net_collection">நிகர வசூல்</string>
+    <string name="report_share">அறிக்கையைப் பகிர்</string>
+    <string name="report_no_transactions">இன்று பரிவர்த்தனைகள் இல்லை.</string>
+
+    <!-- Shop Profile -->
+    <string name="shop_profile_title">கடை சுயவிவரம்</string>
+    <string name="shop_name_hint">கடை பெயர்</string>
+    <string name="shop_owner_hint">உரிமையாளர் பெயர்</string>
+    <string name="shop_save">சுயவிவரத்தைச் சேமி</string>
+    <string name="shop_saved">சுயவிவரம் சேமிக்கப்பட்டது!</string>
+    <string name="shop_default_name">என் கடை</string>
+    <string name="shop_default_owner">கடைக்காரர்</string>
+
+    <!-- App Lock -->
+    <string name="lock_title">ஆப் பூட்டு</string>
+    <string name="lock_enable">ஆப் பூட்டை இயக்கு</string>
+    <string name="lock_set_pin">PIN அமை</string>
+    <string name="lock_enter_pin">திறக்க PIN உள்ளிடவும்</string>
+    <string name="lock_biometric_prompt">கிராம கணக்கு அணுக அங்கீகரிக்கவும்</string>
+    <string name="lock_biometric_subtitle">உங்கள் கைரேகை அல்லது முகத்தைப் பயன்படுத்தவும்</string>
+    <string name="lock_wrong_pin">தவறான PIN. மீண்டும் முயற்சிக்கவும்.</string>
+
+    <!-- Voice Input -->
+    <string name="voice_input">குரல் உள்ளீடு</string>
+    <string name="voice_speak_amount">தொகையைச் சொல்லுங்கள்…</string>
+    <string name="voice_speak_item">பொருளின் பெயரைச் சொல்லுங்கள்…</string>
+    <string name="voice_speak_name">வாடிக்கையாளர் பெயரைச் சொல்லுங்கள்…</string>
+    <string name="voice_not_supported">இந்த சாதனத்தில் குரல் உள்ளீடு ஆதரிக்கப்படவில்லை.</string>
+
+    <!-- General -->
+    <string name="save">சேமி</string>
+    <string name="cancel">ரத்துசெய்</string>
+    <string name="delete">நீக்கு</string>
+    <string name="yes">ஆம்</string>
+    <string name="no">இல்லை</string>
+    <string name="ok">சரி</string>
+    <string name="error">பிழை</string>
+    <string name="success">வெற்றி</string>
+    <string name="rupee_symbol">₹</string>
+    <string name="rupee_format">₹ %1$s</string>
+
+    <!-- Data Export -->
+    <string name="export_title">தரவு ஏற்றுமதி</string>
+    <string name="export_csv">CSV ஆக ஏற்றுமதி</string>
+    <string name="export_json">JSON ஆக ஏற்றுமதி</string>
+    <string name="export_success">தரவு ஏற்றுமதி வெற்றி!</string>
+    <string name="export_error">தரவு ஏற்றுமதி தோல்வி.</string>
+    <string name="export_share">ஏற்றுமதி கோப்பைப் பகிர்</string>
+
+    <!-- Photo options -->
+    <string name="photo_option_title">புகைப்படம் தேர்வு</string>
+    <string name="photo_camera">புகைப்படம் எடு</string>
+    <string name="photo_gallery">கேலரியிலிருந்து தேர்வு</string>
+
+    <!-- Language -->
+    <string name="language_title">மொழி / Language</string>
+</resources>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- App -->
+    <string name="app_name">ग्राम खाता</string>
+    <string name="app_tagline">आपकी गाँव की डिजिटल बही</string>
+
+    <!-- Navigation -->
+    <string name="nav_dashboard">डैशबोर्ड</string>
+    <string name="nav_customers">ग्राहक</string>
+    <string name="nav_report">दैनिक रिपोर्ट</string>
+    <string name="nav_settings">सेटिंग्स</string>
+
+    <!-- Dashboard -->
+    <string name="dashboard_title">बकाया डैशबोर्ड</string>
+    <string name="dashboard_total_due">कुल बकाया</string>
+    <string name="dashboard_no_customers">अभी कोई ग्राहक नहीं।\n+ दबाकर पहला ग्राहक जोड़ें।</string>
+    <string name="dashboard_search_hint">ग्राहक खोजें…</string>
+
+    <!-- Customer -->
+    <string name="customer_add_title">ग्राहक जोड़ें</string>
+    <string name="customer_edit_title">ग्राहक बदलें</string>
+    <string name="customer_name_hint">ग्राहक का नाम</string>
+    <string name="customer_phone_hint">फ़ोन नंबर</string>
+    <string name="customer_add_photo">फ़ोटो जोड़ें</string>
+    <string name="customer_change_photo">फ़ोटो बदलें</string>
+    <string name="customer_save">ग्राहक सहेजें</string>
+    <string name="customer_delete">ग्राहक हटाएं</string>
+    <string name="customer_delete_confirm">क्या आप इस ग्राहक को हटाना चाहते हैं? सभी लेनदेन भी हट जाएंगे।</string>
+    <string name="customer_detail_title">ग्राहक विवरण</string>
+    <string name="customer_net_balance">शुद्ध शेष</string>
+    <string name="customer_will_get">आपको मिलेगा</string>
+    <string name="customer_will_give">आपको देना है</string>
+
+    <!-- Transactions -->
+    <string name="txn_credit_title">उधार दिया (क्रेडिट)</string>
+    <string name="txn_payment_title">भुगतान मिला (पेमेंट)</string>
+    <string name="txn_amount_hint">राशि दर्ज करें (₹)</string>
+    <string name="txn_note_hint">सामान का विवरण (वैकल्पिक)</string>
+    <string name="txn_save">सहेजें</string>
+    <string name="txn_credit">+ उधार दिया</string>
+    <string name="txn_payment">- भुगतान मिला</string>
+    <string name="txn_history_title">लेनदेन इतिहास</string>
+    <string name="txn_no_history">अभी कोई लेनदेन नहीं।</string>
+    <string name="txn_credit_label">उधार</string>
+    <string name="txn_payment_label">भुगतान</string>
+    <string name="txn_delete_title">लेनदेन हटाएं</string>
+    <string name="txn_delete_confirm">क्या आप इस लेनदेन को हटाना चाहते हैं? यह वापस नहीं किया जा सकता।</string>
+    <string name="txn_edit">लेनदेन बदलें</string>
+    <string name="txn_options_title">लेनदेन विकल्प</string>
+    <string name="txn_updated">लेनदेन अपडेट हुआ!</string>
+    <string name="txn_deleted">लेनदेन हटा दिया!</string>
+
+    <!-- Reminder -->
+    <string name="remind_title">रिमाइंडर भेजें</string>
+    <string name="remind_whatsapp">WhatsApp से याद दिलाएं</string>
+    <string name="remind_sms">SMS से याद दिलाएं</string>
+    <string name="remind_message">नमस्ते, %1$s पर आपका बकाया ₹%2$s है। कृपया सुविधानुसार भुगतान करें। धन्यवाद! — %3$s</string>
+    <string name="remind_no_phone">इस ग्राहक का फ़ोन नंबर नहीं है।</string>
+    <string name="remind_whatsapp_not_installed">इस डिवाइस पर WhatsApp इंस्टॉल नहीं है।</string>
+
+    <!-- Daily Report -->
+    <string name="report_title">दैनिक संग्रह रिपोर्ट</string>
+    <string name="report_date">दिनांक: %1$s</string>
+    <string name="report_total_credit">कुल उधार दिया</string>
+    <string name="report_total_payment">कुल भुगतान मिला</string>
+    <string name="report_net_collection">शुद्ध संग्रह</string>
+    <string name="report_share">रिपोर्ट साझा करें</string>
+    <string name="report_no_transactions">आज कोई लेनदेन नहीं।</string>
+
+    <!-- Shop Profile -->
+    <string name="shop_profile_title">दुकान प्रोफ़ाइल</string>
+    <string name="shop_name_hint">दुकान का नाम</string>
+    <string name="shop_owner_hint">मालिक का नाम</string>
+    <string name="shop_save">प्रोफ़ाइल सहेजें</string>
+    <string name="shop_saved">प्रोफ़ाइल सहेजा गया!</string>
+    <string name="shop_default_name">मेरी दुकान</string>
+    <string name="shop_default_owner">दुकानदार</string>
+
+    <!-- App Lock -->
+    <string name="lock_title">ऐप लॉक</string>
+    <string name="lock_enable">ऐप लॉक चालू करें</string>
+    <string name="lock_set_pin">PIN सेट करें</string>
+    <string name="lock_enter_pin">अनलॉक करने के लिए PIN दर्ज करें</string>
+    <string name="lock_biometric_prompt">ग्राम खाता एक्सेस के लिए प्रमाणित करें</string>
+    <string name="lock_biometric_subtitle">अपनी उंगली या चेहरे का उपयोग करें</string>
+    <string name="lock_wrong_pin">गलत PIN। फिर से कोशिश करें।</string>
+
+    <!-- Voice Input -->
+    <string name="voice_input">ध्वनि इनपुट</string>
+    <string name="voice_speak_amount">राशि बोलें…</string>
+    <string name="voice_speak_item">सामान का नाम बोलें…</string>
+    <string name="voice_speak_name">ग्राहक का नाम बोलें…</string>
+    <string name="voice_not_supported">इस डिवाइस पर ध्वनि इनपुट समर्थित नहीं है।</string>
+
+    <!-- General -->
+    <string name="save">सहेजें</string>
+    <string name="cancel">रद्द करें</string>
+    <string name="delete">हटाएं</string>
+    <string name="yes">हाँ</string>
+    <string name="no">नहीं</string>
+    <string name="ok">ठीक</string>
+    <string name="error">त्रुटि</string>
+    <string name="success">सफलता</string>
+    <string name="rupee_symbol">₹</string>
+    <string name="rupee_format">₹ %1$s</string>
+
+    <!-- Data Export -->
+    <string name="export_title">डेटा निर्यात</string>
+    <string name="export_csv">CSV में निर्यात</string>
+    <string name="export_json">JSON में निर्यात</string>
+    <string name="export_success">डेटा सफलतापूर्वक निर्यात हुआ!</string>
+    <string name="export_error">डेटा निर्यात विफल।</string>
+    <string name="export_share">निर्यात फ़ाइल साझा करें</string>
+
+    <!-- Photo options -->
+    <string name="photo_option_title">फ़ोटो चुनें</string>
+    <string name="photo_camera">फ़ोटो लें</string>
+    <string name="photo_gallery">गैलरी से चुनें</string>
+
+    <!-- Language -->
+    <string name="language_title">भाषा / Language</string>
+</resources>

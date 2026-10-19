@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <!-- Customer Header Card -->
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardCustomerHeader"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/spacing_md"
+        app:cardCornerRadius="@dimen/card_radius"
+        app:cardElevation="@dimen/card_elevation"
+        app:cardBackgroundColor="@color/primary"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/spacing_lg"
+            android:gravity="center">
+
+            <!-- Avatar -->
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/ivAvatar"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_person"
+                android:background="@drawable/bg_avatar_circle"
+                android:padding="12dp"
+                app:shapeAppearanceOverlay="@style/ShapeAppearance.Material3.Corner.Full" />
+
+            <!-- Name -->
+            <TextView
+                android:id="@+id/tvName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_on_dark"
+                android:textSize="@dimen/text_title"
+                android:textStyle="bold"
+                android:layout_marginTop="@dimen/spacing_sm"
+                tools:text="Ramesh Kumar" />
+
+            <!-- Phone -->
+            <TextView
+                android:id="@+id/tvPhone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#B2FFFFFF"
+                android:textSize="@dimen/text_body"
+                android:layout_marginTop="@dimen/spacing_xs"
+                tools:text="98765 43210" />
+
+            <!-- Net Balance -->
+            <TextView
+                android:id="@+id/tvBalanceLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#80FFFFFF"
+                android:textSize="@dimen/text_caption"
+                android:layout_marginTop="@dimen/spacing_md"
+                tools:text="You will get" />
+
+            <TextView
+                android:id="@+id/tvNetBalance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_on_dark"
+                android:textSize="@dimen/text_amount_large"
+                android:textStyle="bold"
+                android:layout_marginTop="@dimen/spacing_xs"
+                tools:text="₹ 2,450" />
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <!-- Action Buttons Row -->
+    <LinearLayout
+        android:id="@+id/actionButtons"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginHorizontal="@dimen/spacing_md"
+        android:layout_marginTop="@dimen/spacing_md"
+        app:layout_constraintTop_toBottomOf="@id/cardCustomerHeader"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <!-- Credit Button -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnCredit"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/button_height"
+            android:layout_weight="1"
+            android:text="@string/txn_credit"
+            android:textAllCaps="false"
+            android:textSize="14sp"
+            app:backgroundTint="@color/credit_red"
+            app:cornerRadius="@dimen/button_radius"
+            android:layout_marginEnd="@dimen/spacing_sm" />
+
+        <!-- Payment Button -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnPayment"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/button_height"
+            android:layout_weight="1"
+            android:text="@string/txn_payment"
+            android:textAllCaps="false"
+            android:textSize="14sp"
+            app:backgroundTint="@color/payment_green"
+            app:cornerRadius="@dimen/button_radius"
+            android:layout_marginStart="@dimen/spacing_sm" />
+    </LinearLayout>
+
+    <!-- Reminder Buttons Row -->
+    <LinearLayout
+        android:id="@+id/reminderButtons"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginHorizontal="@dimen/spacing_md"
+        android:layout_marginTop="@dimen/spacing_sm"
+        app:layout_constraintTop_toBottomOf="@id/actionButtons"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <!-- WhatsApp Remind -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnWhatsApp"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/button_height"
+            android:layout_weight="1"
+            android:text="@string/remind_whatsapp"
+            android:textAllCaps="false"
+            android:textSize="12sp"
+            app:icon="@drawable/ic_whatsapp"
+            app:backgroundTint="@color/whatsapp_green"
+            app:cornerRadius="@dimen/button_radius"
+            android:layout_marginEnd="@dimen/spacing_sm" />
+
+        <!-- SMS Remind -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnSMS"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/button_height"
+            android:layout_weight="1"
+            android:text="@string/remind_sms"
+            android:textAllCaps="false"
+            android:textSize="12sp"
+            app:icon="@drawable/ic_sms"
+            style="@style/GramaKhata.Button.SMS"
+            android:layout_marginStart="@dimen/spacing_sm" />
+    </LinearLayout>
+
+    <!-- Transaction History Label -->
+    <TextView
+        android:id="@+id/tvHistoryLabel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/spacing_md"
+        android:layout_marginTop="@dimen/spacing_lg"
+        android:text="@string/txn_history_title"
+        android:textColor="@color/text_primary"
+        android:textSize="@dimen/text_subtitle"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/reminderButtons"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Transaction History List -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvTransactions"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/spacing_sm"
+        android:clipToPadding="false"
+        android:paddingBottom="@dimen/spacing_md"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintTop_toBottomOf="@id/tvHistoryLabel"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:listitem="@layout/item_transaction" />
+
+    <!-- Empty State for Transactions -->
+    <TextView
+        android:id="@+id/tvNoTransactions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txn_no_history"
+        android:textColor="@color/text_secondary"
+        android:textSize="@dimen/text_body"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@id/tvHistoryLabel"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

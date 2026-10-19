@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <!-- Header Card with Total Outstanding -->
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardTotalDue"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/spacing_md"
+        app:cardCornerRadius="@dimen/card_radius"
+        app:cardElevation="@dimen/card_elevation"
+        app:cardBackgroundColor="@color/primary"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/spacing_lg"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/dashboard_total_due"
+                android:textColor="#B2FFFFFF"
+                android:textSize="@dimen/text_body" />
+
+            <TextView
+                android:id="@+id/tvTotalDue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_on_dark"
+                android:textSize="@dimen/text_amount_large"
+                android:textStyle="bold"
+                android:layout_marginTop="@dimen/spacing_sm"
+                tools:text="₹ 12,450" />
+
+            <TextView
+                android:id="@+id/tvCustomerCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#80FFFFFF"
+                android:textSize="@dimen/text_caption"
+                android:layout_marginTop="@dimen/spacing_xs"
+                tools:text="5 customers with outstanding dues" />
+
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <!-- Search Bar + Date Filter Row -->
+    <LinearLayout
+        android:id="@+id/searchFilterRow"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginHorizontal="@dimen/spacing_md"
+        android:layout_marginTop="@dimen/spacing_sm"
+        android:gravity="center_vertical"
+        app:layout_constraintTop_toBottomOf="@id/cardTotalDue"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/searchLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+            app:boxCornerRadiusTopStart="12dp"
+            app:boxCornerRadiusTopEnd="12dp"
+            app:boxCornerRadiusBottomStart="12dp"
+            app:boxCornerRadiusBottomEnd="12dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etSearch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/dashboard_search_hint"
+                android:inputType="text"
+                android:maxLines="1" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnDateFilter"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="8dp"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            app:icon="@drawable/ic_report"
+            app:iconGravity="textStart"
+            app:iconPadding="0dp"
+            style="@style/Widget.Material3.Button.IconButton.Filled.Tonal" />
+    </LinearLayout>
+
+    <!-- Active Date Filter Chip -->
+    <com.google.android.material.chip.Chip
+        android:id="@+id/chipDateFilter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/spacing_md"
+        android:layout_marginTop="@dimen/spacing_xs"
+        android:visibility="gone"
+        app:closeIconVisible="true"
+        app:chipBackgroundColor="@color/primary_light"
+        app:closeIconTint="@color/text_primary"
+        app:layout_constraintTop_toBottomOf="@id/searchFilterRow"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text="01 Jan - 31 Jan"
+        tools:visibility="visible" />
+
+    <!-- Customer List -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvCustomers"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/spacing_sm"
+        android:clipToPadding="false"
+        android:paddingBottom="80dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintTop_toBottomOf="@id/chipDateFilter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:listitem="@layout/item_customer" />
+
+    <!-- Empty State -->
+    <LinearLayout
+        android:id="@+id/emptyState"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@id/chipDateFilter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <ImageView
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:src="@drawable/ic_person"
+            android:alpha="0.3"
+            android:contentDescription="No customers" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dashboard_no_customers"
+            android:textColor="@color/text_secondary"
+            android:textSize="@dimen/text_body"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/spacing_md" />
+    </LinearLayout>
+
+    <!-- FAB to Add Customer -->
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/fabAddCustomer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/fab_margin"
+        android:text="@string/customer_add_title"
+        android:textColor="@color/text_on_dark"
+        app:icon="@drawable/ic_add"
+        app:iconTint="@color/text_on_dark"
+        app:backgroundTint="@color/primary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

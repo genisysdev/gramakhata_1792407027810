@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- App -->
+    <string name="app_name">ഗ്രാമ ഖാത</string>
+    <string name="app_tagline">നിങ്ങളുടെ ഗ്രാമ ഡിജിറ്റൽ ലെഡ്ജർ</string>
+
+    <!-- Navigation -->
+    <string name="nav_dashboard">ഡാഷ്‌ബോർഡ്</string>
+    <string name="nav_customers">ഉപഭോക്താക്കൾ</string>
+    <string name="nav_report">ദൈനംദിന റിപ്പോർട്ട്</string>
+    <string name="nav_settings">ക്രമീകരണങ്ങൾ</string>
+
+    <!-- Dashboard -->
+    <string name="dashboard_title">കുടിശ്ശിക ഡാഷ്‌ബോർഡ്</string>
+    <string name="dashboard_total_due">ആകെ കുടിശ്ശിക</string>
+    <string name="dashboard_no_customers">ഉപഭോക്താക്കൾ ഇല്ല.\n+ അമർത്തി ആദ്യ ഉപഭോക്താവിനെ ചേർക്കുക.</string>
+    <string name="dashboard_search_hint">ഉപഭോക്താവിനെ തിരയുക…</string>
+
+    <!-- Customer -->
+    <string name="customer_add_title">ഉപഭോക്താവിനെ ചേർക്കുക</string>
+    <string name="customer_edit_title">ഉപഭോക്താവിനെ തിരുത്തുക</string>
+    <string name="customer_name_hint">ഉപഭോക്താവിന്റെ പേര്</string>
+    <string name="customer_phone_hint">ഫോൺ നമ്പർ</string>
+    <string name="customer_add_photo">ഫോട്ടോ ചേർക്കുക</string>
+    <string name="customer_change_photo">ഫോട്ടോ മാറ്റുക</string>
+    <string name="customer_save">ഉപഭോക്താവിനെ സേവ് ചെയ്യുക</string>
+    <string name="customer_delete">ഉപഭോക്താവിനെ ഇല്ലാതാക്കുക</string>
+    <string name="customer_delete_confirm">ഈ ഉപഭോക്താവിനെ ഇല്ലാതാക്കണമെന്ന് ഉറപ്പാണോ? എല്ലാ ഇടപാടുകളും ഇല്ലാതാകും.</string>
+    <string name="customer_detail_title">ഉപഭോക്താവിന്റെ വിവരങ്ങൾ</string>
+    <string name="customer_net_balance">അറ്റ ബാലൻസ്</string>
+    <string name="customer_will_get">നിങ്ങൾക്ക് കിട്ടും</string>
+    <string name="customer_will_give">നിങ്ങൾ കൊടുക്കണം</string>
+
+    <!-- Transactions -->
+    <string name="txn_credit_title">കടം കൊടുത്തത്</string>
+    <string name="txn_payment_title">പണം ലഭിച്ചത്</string>
+    <string name="txn_amount_hint">തുക നൽകുക (₹)</string>
+    <string name="txn_note_hint">സാധനത്തിന്റെ വിവരം (ഐച്ഛികം)</string>
+    <string name="txn_save">സേവ് ചെയ്യുക</string>
+    <string name="txn_credit">+ കടം കൊടുത്തത്</string>
+    <string name="txn_payment">- പണം ലഭിച്ചത്</string>
+    <string name="txn_history_title">ഇടപാട് ചരിത്രം</string>
+    <string name="txn_no_history">ഇടപാടുകൾ ഇല്ല.</string>
+    <string name="txn_credit_label">കടം</string>
+    <string name="txn_payment_label">പണം</string>
+    <string name="txn_delete_title">ഇടപാട് ഇല്ലാതാക്കുക</string>
+    <string name="txn_delete_confirm">ഈ ഇടപാട് ഇല്ലാതാക്കണമെന്ന് ഉറപ്പാണോ?</string>
+    <string name="txn_edit">ഇടപാട് തിരുത്തുക</string>
+    <string name="txn_options_title">ഇടപാട് ഓപ്ഷനുകൾ</string>
+    <string name="txn_updated">ഇടപാട് അപ്‌ഡേറ്റ് ചെയ്തു!</string>
+    <string name="txn_deleted">ഇടപാട് ഇല്ലാതാക്കി!</string>
+
+    <!-- Reminder -->
+    <string name="remind_title">ഓർമ്മപ്പെടുത്തൽ അയയ്ക്കുക</string>
+    <string name="remind_whatsapp">WhatsApp വഴി ഓർമ്മപ്പെടുത്തുക</string>
+    <string name="remind_sms">SMS വഴി ഓർമ്മപ്പെടുത്തുക</string>
+    <string name="remind_message">നമസ്കാരം, %1$s ൽ നിങ്ങളുടെ കുടിശ്ശിക ₹%2$s. സൗകര്യപ്രദമായ സമയത്ത് അടയ്ക്കുക. നന്ദി! — %3$s</string>
+    <string name="remind_no_phone">ഈ ഉപഭോക്താവിന് ഫോൺ നമ്പർ ഇല്ല.</string>
+    <string name="remind_whatsapp_not_installed">ഈ ഉപകരണത്തിൽ WhatsApp ഇൻസ്റ്റാൾ ചെയ്തിട്ടില്ല.</string>
+
+    <!-- Daily Report -->
+    <string name="report_title">ദൈനംദിന ശേഖരണ റിപ്പോർട്ട്</string>
+    <string name="report_date">തീയതി: %1$s</string>
+    <string name="report_total_credit">ആകെ കടം കൊടുത്തത്</string>
+    <string name="report_total_payment">ആകെ പണം ലഭിച്ചത്</string>
+    <string name="report_net_collection">അറ്റ ശേഖരണം</string>
+    <string name="report_share">റിപ്പോർട്ട് പങ്കിടുക</string>
+    <string name="report_no_transactions">ഇന്ന് ഇടപാടുകൾ ഇല്ല.</string>
+
+    <!-- Shop Profile -->
+    <string name="shop_profile_title">കട പ്രൊഫൈൽ</string>
+    <string name="shop_name_hint">കടയുടെ പേര്</string>
+    <string name="shop_owner_hint">ഉടമയുടെ പേര്</string>
+    <string name="shop_save">പ്രൊഫൈൽ സേവ് ചെയ്യുക</string>
+    <string name="shop_saved">പ്രൊഫൈൽ സേവ് ചെയ്തു!</string>
+    <string name="shop_default_name">എന്റെ കട</string>
+    <string name="shop_default_owner">കടക്കാരൻ</string>
+
+    <!-- App Lock -->
+    <string name="lock_title">ആപ്പ് ലോക്ക്</string>
+    <string name="lock_enable">ആപ്പ് ലോക്ക് പ്രവർത്തനക്ഷമമാക്കുക</string>
+    <string name="lock_set_pin">PIN സെറ്റ് ചെയ്യുക</string>
+    <string name="lock_enter_pin">അൺലോക്ക് ചെയ്യാൻ PIN നൽകുക</string>
+    <string name="lock_biometric_prompt">ഗ്രാമ ഖാത ആക്‌സസ്സ് ചെയ്യാൻ ആധികാരികമാക്കുക</string>
+    <string name="lock_biometric_subtitle">നിങ്ങളുടെ വിരലടയാളമോ മുഖമോ ഉപയോഗിക്കുക</string>
+    <string name="lock_wrong_pin">തെറ്റായ PIN. വീണ്ടും ശ്രമിക്കുക.</string>
+
+    <!-- Voice Input -->
+    <string name="voice_input">വോയ്സ് ഇൻപുട്ട്</string>
+    <string name="voice_speak_amount">തുക പറയുക…</string>
+    <string name="voice_speak_item">സാധനത്തിന്റെ പേര് പറയുക…</string>
+    <string name="voice_speak_name">ഉപഭോക്താവിന്റെ പേര് പറയുക…</string>
+    <string name="voice_not_supported">ഈ ഉപകരണത്തിൽ വോയ്സ് ഇൻപുട്ട് പിന്തുണയ്ക്കുന്നില്ല.</string>
+
+    <!-- General -->
+    <string name="save">സേവ് ചെയ്യുക</string>
+    <string name="cancel">റദ്ദാക്കുക</string>
+    <string name="delete">ഇല്ലാതാക്കുക</string>
+    <string name="yes">അതെ</string>
+    <string name="no">ഇല്ല</string>
+    <string name="ok">ശരി</string>
+    <string name="error">പിശക്</string>
+    <string name="success">വിജയം</string>
+    <string name="rupee_symbol">₹</string>
+    <string name="rupee_format">₹ %1$s</string>
+
+    <!-- Data Export -->
+    <string name="export_title">ഡാറ്റ എക്‌സ്‌പോർട്ട്</string>
+    <string name="export_csv">CSV ആയി എക്‌സ്‌പോർട്ട്</string>
+    <string name="export_json">JSON ആയി എക്‌സ്‌പോർട്ട്</string>
+    <string name="export_success">ഡാറ്റ വിജയകരമായി എക്‌സ്‌പോർട്ട് ചെയ്തു!</string>
+    <string name="export_error">ഡാറ്റ എക്‌സ്‌പോർട്ട് പരാജയപ്പെട്ടു.</string>
+    <string name="export_share">എക്‌സ്‌പോർട്ട് ഫയൽ പങ്കിടുക</string>
+
+    <!-- Photo options -->
+    <string name="photo_option_title">ഫോട്ടോ തിരഞ്ഞെടുക്കുക</string>
+    <string name="photo_camera">ഫോട്ടോ എടുക്കുക</string>
+    <string name="photo_gallery">ഗാലറിയിൽ നിന്ന് തിരഞ്ഞെടുക്കുക</string>
+
+    <!-- Language -->
+    <string name="language_title">ഭാഷ / Language</string>
+</resources>

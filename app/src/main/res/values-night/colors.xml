@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Primary Brand Colors (Dark Mode) -->
+    <color name="primary">#FF4CAF50</color>
+    <color name="primary_dark">#FF2E7D32</color>
+    <color name="primary_light">#FF81C784</color>
+    <color name="on_primary">#FF000000</color>
+
+    <!-- Secondary -->
+    <color name="secondary">#FFFFB74D</color>
+    <color name="secondary_dark">#FFFF8F00</color>
+    <color name="secondary_light">#FFFFCC80</color>
+    <color name="on_secondary">#FF000000</color>
+
+    <!-- Background -->
+    <color name="background">#FF121212</color>
+    <color name="surface">#FF1E1E1E</color>
+    <color name="on_background">#FFE0E0E0</color>
+    <color name="on_surface">#FFE0E0E0</color>
+
+    <!-- Status Colors -->
+    <color name="credit_red">#FFEF5350</color>
+    <color name="credit_red_bg">#33EF5350</color>
+    <color name="payment_green">#FF66BB6A</color>
+    <color name="payment_green_bg">#3366BB6A</color>
+
+    <!-- Due Ageing -->
+    <color name="due_normal">#FF4CAF50</color>
+    <color name="due_warning">#FFFFB74D</color>
+    <color name="due_overdue">#FFEF5350</color>
+
+    <!-- Card and Divider -->
+    <color name="card_background">#FF2A2A2A</color>
+    <color name="card_stroke">#FF424242</color>
+    <color name="divider">#FF424242</color>
+
+    <!-- Text -->
+    <color name="text_primary">#FFEEEEEE</color>
+    <color name="text_secondary">#FFB0B0B0</color>
+    <color name="text_hint">#FF757575</color>
+    <color name="text_on_dark">#FFFFFFFF</color>
+
+    <!-- Splash -->
+    <color name="splash_background">#FF1B5E20</color>
+
+    <!-- FAB -->
+    <color name="fab_credit">#FFEF5350</color>
+    <color name="fab_payment">#FF66BB6A</color>
+
+    <!-- WhatsApp Green -->
+    <color name="whatsapp_green">#FF25D366</color>
+    <color name="sms_blue">#FF42A5F5</color>
+
+    <!-- Transparent -->
+    <color name="transparent">#00000000</color>
+    <color name="scrim">#80000000</color>
+
+    <!-- Status Bar -->
+    <color name="status_bar">#FF0D3311</color>
+</resources>
